@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: block;
+    color:#000;
+    padding: 100px;
+    justify-content: space-around;
+}
+
+.header{
+    display: block;
+    margin-bottom: 40px;
+}
+.header-title{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.header-underline{
+    position: absolute;
+    background-color: orange;
+    width: 50px;
+    height: 2px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-bottom: 100px; */
+}
+
+.contact{
+    margin-right: 32px;
+}
+
+.contact__body{
+    margin-top: 32px;
+    color: #8f8c8c;
+}
+
+.contact__body-row{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.contact__body-row--icon{
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.query{
+    display: block;
+
+    /* width: 100%; */
+}
+
+.query__form{
+    margin-top: 32px;
+
+}
+
+.query__form--input{
+    line-height:1.4rem ;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+
+}
+
+.query__form--btn{
+    background-color: #0cb8b6;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    line-height:1.4rem ;
+
+}
+
+
+.query__form--btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

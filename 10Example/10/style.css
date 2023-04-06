@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+.container{
+    /* background-color: #c5c2c2; */
+    width: 100%;
+    display: block;
+    color:#000;
+    padding: 100px 100px;
+    /* background-color: #ecf0f1; */
+
+}
+
+.content{
+    margin: 0 auto;
+    width: 800px;
+    background-color: #ecf0f1;
+    padding: 24px;
+}
+
+.content__item{
+    display: flex;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: red dashed 2px ;
+    /* flex-wrap: wrap; */
+}
+
+.content__item:first-child{
+    padding-top: 0;
+}
+
+.content__item:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/*Bug: k hiển thị đúng được width: 85px;
+-> Fix: thêm 1 div bọc thẻ p*/
+.content__item-box{
+    margin-right: 40px;
+}
+.content__item-box-detail{
+    background-color: #d997de;
+    border-radius: 6px;
+    width: 85px;
+    height: 85px;
+    position: relative;
+}
+.content__item-box--text{
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+
+}
+
+.content__item-text{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.content__text-title{
+    margin-bottom: 12px;
+}
+
+.content__text-detail{
+    line-height: 1.4;
+    display: block;
+    color:#8f8c8c;
+}
+
+@media (max-width: 1000px) {
+    .content__item{
+        flex-wrap: wrap;
+    }
+
+    .content__item-box{
+        margin-bottom: 24px;
+    }
+    .content{
+        width: 400px;
+    }
+}

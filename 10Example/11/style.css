@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+.container{
+    display: block;
+    color:#000;
+    padding: 80px 200px;
+
+}
+.container-title{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.content{
+    display: block;
+}
+
+.form__input{
+    padding: 8px 14px;
+    margin-bottom: 14px;
+    line-height: 1.4rem;
+    border: 1px solid #ccc;
+}
+
+.form__group-col{
+    display: inline-block;
+    width: calc(50% - 22.5px);
+}
+
+.form__group-col:first-child{
+    margin-right: 20px;
+}
+
+.form__group-col:last-child{
+    margin-left: 20px;
+}
+
+.form__name{
+    width: 100%;
+    margin-right: 14px ;
+}
+
+.form__email{
+    width: 100%;
+    padding-left: 14px ;
+}
+.form__subject{
+    width: 100%;
+}
+
+.form__text{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form__footer{  
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.form__footer-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #5d9cfb;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-right: 14px;
+}
+
+.form__footer-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 1000px) {
+    .form__name-email{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form__group-col{
+        width: 100%;
+    }
+
+    .form__group-col:first-child{
+        margin-right: 0;
+    }
+    
+    .form__group-col:last-child{
+        margin-left: 0;
+    }
+
+}

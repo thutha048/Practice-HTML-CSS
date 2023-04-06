@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 10px 40px;
+}
+
+.row{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+span, li{
+    width: 80px;
+    height:100px;
+    float: left;
+}
+
+/* li{
+    display: grid;
+    list-style: none;
+} */
+
+.col{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+} 
+
+.col__content{
+    position: absolute;
+    padding: 5px;
+}
+
+li:nth-child(2n+1),
+span:nth-child(2n+1){
+    background-color: red;
+}
+
+li:nth-child(2n),
+span:nth-child(2n){
+    background-color: cornflowerblue;
+}
+
+/* span,
+li{
+    width: 80px;
+    height:100px;
+    float: left;
+} */
+
+.span__content{
+    margin: 10px ;
+}
+
+
+@media only screen and (max-width: 320px) {
+    li:nth-child(2n+1),
+    span:nth-child(2n+1){
+        background-color: red;
+        width:20px;
+    }
+    li:nth-child(2n),
+    span:nth-child(2n){
+        background-color: cornflowerblue;
+        width: -30px;
+    }
+}
+
+
+
+@media (min-width: 321px) and (max-width: 425px) {
+ 
+    li:nth-child(2n+1), 
+    span:nth-child(2n+1){
+        background-color: yellow;
+        width: 20px;
+    }
+
+    li:nth-child(2n), 
+    span:nth-child(2n){
+        background-color:red;
+        width: -50px;
+    }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    li:nth-child(2n+1), 
+    span:nth-child(2n+1){
+        background-color: green;
+        width: 30px;
+    }
+
+    li:nth-child(2n), 
+    span:nth-child(2n){
+        background-color:yellow;
+        width: -40px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    li:nth-child(2n+1), 
+    span:nth-child(2n+1){
+        background-color: yellow;
+        width: 30px;
+    }
+
+    li:nth-child(2n), 
+    span:nth-child(2n){
+        background-color:purple;
+        width: -40px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1201px) {
+    li:nth-child(2n+1), 
+    span:nth-child(2n+1){
+        background-color: purple;
+        width: 50px;
+    }
+
+    li:nth-child(2n), 
+    span:nth-child(2n){
+        background-color:pink;
+        width: -100px;
+    }
+}

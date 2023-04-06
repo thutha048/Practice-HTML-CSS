@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/css/all.min.css">
+        <title>LoginForm</title>
+    </head>
+    <body>
+        <button class ="open-btn" id="openForm" data-target="modalForm" onclick="openForm()">Đăng nhập hệ thống</button>
+        <div class="modal__overlay " id="modalForm" style="display:none;">
+            <!--Lớp phủ-->
+                <div class="modal__container ">
+                    <div class="login">
+                            <h3 class="login__header" id="nameForm">Member Login</h3>
+                            <i class="fa-solid fa-xmark login__close " id="close" onclick="hideForm()"></i>
+                        <form class="login__form" id="loginForm" method="post">
+                            <div class=" login__input">
+                                <i class="fa-solid fa-user login__input-icons"></i>
+                                <input type="text"  class="login__input-field" id="user" placeholder="Username" name="uname" autocomplete="off" required >
+                                <span id="errorUser"></span>
+                            </div>
+                            <div class=" login__input">
+                                <i class="fa-solid fa-lock login__input-icons"></i>
+                                <input type="password" class="login__input-field" id="pass" placeholder="Password" name="upass" required>
+                                <span id="errorPass"></span>
+                            </div>
+                            
+                            <button class=" login__form-btn  " id="showLoading" type="button" onclick="loading()">
+                                Login
+                                <!-- <i class="fa-regular fa-loader login__form-btn--loading"></i> -->
+                            </button>
+                            <span id="success" style="color: green"></span>
+                            
+                            <!-- <button class="login__footer">Forgot Password?</button> -->
+                            <div class="login__footer">
+                                <a href="#" class="login__footer-link" onclick="forgot()">Forgot Password?</a>
+                            </div>
+                        </form>
+
+                        <form action="" id="save" style="display:none;" class="login__form">
+                            <div class="login__input">
+                                <i class="fa-solid fa-lock login__input-icons"></i>
+                                <input type="password"  class="login__input-field" id="oldPass" placeholder="Old password"  autocomplete="off" required >
+                                <span id="errorOldPass"></span>
+                            </div>
+                            <div class="login__input">
+                                <i class="fa-sharp fa-solid fa-lock login__input-icons"></i>
+                                <input type="password"  class="login__input-field" id="newPass" placeholder="New password"  autocomplete="off" required >
+                                <span id="errorNewPass"></span>
+                            </div>
+
+                            <button class=" login__form-btn "  type="button" onclick="validateNew()">
+                                Save
+                            </button>
+                            <span id="success" style="color: rgb(10, 29, 10)"></span>
+
+                            <div class="login__footer">
+                                <a href="#" class="login__footer-link" onclick="back()">Back</a>
+                            </div>
+                        </form>
+                     </div>
+                </div>
+
+        </div>
+        <script src="./app.js"></script>
+    </body>
+
+</html>
