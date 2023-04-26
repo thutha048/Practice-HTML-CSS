@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8-Unit </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mainUnit.css">
+
+        <style>
+            html{
+                font-size: 20px;
+            }
+            .box{
+                width: calc(80% );
+                height: 100px;
+                background-color: rgb(190,124,157);
+                margin:0;
+                padding:0;
+            }
+            
+            h1{
+                font-size: 1rem;
+            }
+            a::after{
+                content: "("attr(href)")";
+            }
+
+            .box::after{
+                content: attr(data-title);
+            }
+
+            .box:active{
+                background-color : green;
+            }
+
+            li:first-child{
+                color: red;
+            }
+            li:last-child{
+                color: red;
+                font-size:40px;
+            }
+
+            .box::before{
+                content: "";
+                display: block;
+                width:50px;
+                height:50px;
+                background-color: #fff;
+            } 
+
+            .box::after{
+                content: "hi";
+                color: red;
+                display: block;
+                width:50px;
+                height:50px;
+                background-color: green;
+            } 
+
+            h1::first-letter{
+                font-size:50px;
+            }
+            h1::first-line{
+                color: blue;
+            }
+            h1::selection{
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" data-title= "Là màu hồng" ></div>
+
+        <a href="https://fullstack.edu.vn">Học lập trình</a>
+        <div>
+            <h1>CSS units<br/>Line 2 nè</h1>
+            <h2>1.Absolute units</h2>
+            <ul>
+                <li>px</li>
+            </ul>
+
+            <h2>2.Relative units</h2>
+            <ul>
+                <li>%</li>
+                <li>rem</li>
+                <li>em</li>
+                <li>vw</li>
+                <li>vh</li>
+            </ul>
+        </div> 
+
+    </body>
+</html>

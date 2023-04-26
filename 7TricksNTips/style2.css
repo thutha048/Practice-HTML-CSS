@@ -1,0 +1,19 @@
+head{
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Tự động để cho chữ vào chính giữa cái box*/
+.box{
+    background-color: orange;
+    height: 100px;
+    display: flex; /*must-have*/
+ /*C2*/   align-items: center;
+    justify-content: center; /*hoặc space-around , space-between*/
+}
+
+/*
+h3{
+    margin: auto;
+}
+*/

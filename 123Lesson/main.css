@@ -1,0 +1,10 @@
+:root{
+    --text-color: green;
+}
+#first {
+    color: var(--text-color);
+}
+
+.second{
+    color: blue;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>6 Position Relative</title>
+        <style>
+            html,body{
+                margin:0;
+            }
+
+            li:nth-of-type(2){
+                color: purple;
+            }
+
+            .box{
+                width:100%;
+                height: 120px;
+                background-color: #333;
+                position: relative;
+            }
+
+            .box-child{
+                width: 50px;
+                height: 50px;
+
+                /*background-color: rgba(255,255,255,0.5);*/
+                position: absolute;
+                background-color: #fff;
+                top:0;
+                right:0;
+            }
+
+            .box2{
+                width: 300px;
+                height: 100px;
+                background-color: palevioletred;
+                position: relative;
+                bottom:0;
+                left:0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- box-child là con của box2, box2 là con của box -->
+        <div class="box">
+            <div>
+                <div class=" box2">
+                    <div class="box-child "></div>
+                </div>
+            </div>
+        </div>
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>

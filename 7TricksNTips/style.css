@@ -1,0 +1,15 @@
+head{
+    padding:0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: orange;
+    height: 100px;
+}
+
+/*để cho chữ vào chính giữa cái box*/
+h3{
+    text-align: center;
+    line-height: 100px; /*= height của cha .box*/
+}

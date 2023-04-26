@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "utf-8">
+        <title>Responsive</title>
+
+        <style>
+            body{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+            
+            .pc,
+            .mobile,
+            .tablet{
+                display: none;
+            }
+
+            /*BREAK POINT*/
+            /*PC*/
+            @media (min-width: 1024px){
+                .pc{
+                    display: block;
+                }
+            }
+
+             /*mobile*/
+             @media (max-width: 739px) and (min-width: 100px){
+                .mobile{
+                    display: block;
+                }
+            }
+
+            @media (min-width: 780px) and ( max-width: 1023px){
+                .tablet{
+                    display: block;
+                }
+            }
+
+          
+            
+        </style>
+    </head>
+
+    <body>
+
+        <h2 class = "pc">PC</h2>
+        <h2 class = "tablet">TABLET</h2>
+        <h2 class = "mobile">MOBILE</h2>
+    </body>
+</html>

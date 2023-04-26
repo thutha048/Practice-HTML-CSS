@@ -1,0 +1,21 @@
+head{
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*cách 3 để cho chữ vào chính giữa cái box*/
+.box{
+    background-color: orange;
+    height: 100px;
+    position: relative;
+
+}
+
+
+h3{
+    position: absolute;
+    top:50%; /*50% của thẻ chứa nó*/
+    transform: translateY(-50%) ;
+    left:50%;
+    transform: translateX(-50%) ;
+}

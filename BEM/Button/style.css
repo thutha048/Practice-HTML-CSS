@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+
+}
+
+body > div{
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px; /*tạo bo góc cho btn*/
+    cursor: pointer;
+    transition: opacity 0.2s ease; /*set tgian/.. của hiệu ứng*/ 
+    min-width: 120px; /* để nút dài tối thiểu là 120px*/
+} 
+
+.btn:hover{
+    opacity: 0.6;
+}
+.btn + .btn{ /*CSS cho btn(s) đứng sau btn kia*/
+    margin-left: 46px;
+}
+
+.btn--success{
+    background-color: #71be34;    
+}
+.btn--warn{
+    background-color: #ffb702;
+}
+.btn--danger{
+    background-color: #ff623d;
+}
+
+.btn--disabled{
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+.btn--size-l{
+    padding:16px 56px;
+}
+
+.btn--size-s{
+    padding: 8px 32px;
+}

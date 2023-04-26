@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<!--Các thẻ hay dùng
+1.h1 - h6 (heading : tiêu đề )
+2. p    (paragraph)
+3. img
+4. a (anchor : mỏ neo, thẻ gán liên kết đến trang khác)
+5. ul, li (unordered list, list item)(hiển thị những danh sách)
+6. table 
+7.input 
+8.button 
+9.div : thẻ để bao quanh các p.tử khác ( tạo thành các khối)
+ -->
+<html>
+    <!--Phần đầu-->
+    <head>
+        <title>F8-shop</title>
+        <meta charset = "utf-8">
+
+        <!--link file main.css (external) with html: -->
+        <link rel= "stylesheet" href="main.css">
+            
+
+       <!--CSS internal-->
+        <style>
+            #second-id{
+                color: orange;
+            }
+            #second-id{
+                color: red;
+            }
+            
+            .second {
+                color: violet;
+            }
+
+            h1 {
+                color: red;
+                font-size: 50px;
+            }
+        </style>
+       
+        
+    </head>
+
+     <!--Phần thân  -->
+    <body>
+        <div>
+            <!--internal-->
+            <!--<h1 style= "color : red;font-size: 16px" title="Đây là tiêu đề">Lofi Girl</h1> -->
+            <h1 id = "first">Lofi Girl3</h1>
+            <h1 id ="second-id" class= "second">Lofi2</h1>
+            <h1 id ="second-id" class= "second">Lofi3</h1>
+            <h2 id ="second-id" class= "second">Lofi4</h1>
+
+        </div>
+        <button>Đăng ký</button>
+
+        <input type = "text">
+        <input type ="checkbox">
+        <input type = "radio">
+        <input name = "gender" type = "radio">
+        <input name = "gender" type = "radio">
+        <input name = "gender" type = "radio">
+        
+
+        <p>đây là đoạn văn</p>
+        <img src="https://upload.wikimedia.org/wikipedia/vi/3/3e/Lo-Fi_Girl.png" alt="Ảnh" >
+        <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk"> Tới trang youtube lofi</a>
+        
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ul>
+
+        
+         
+
+        <table>
+            <!--phần Table Head (thead)-->
+            <thead>
+                <!--Tên các heading -->
+                <th>STT</th>
+                <th>Name</th>
+            </thead> 
+
+            <tbody>
+                <!--tr: table row-->
+                <tr>
+                    <td>1</td>
+                    <td>Lưu Thảo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>An</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>    
+</html>

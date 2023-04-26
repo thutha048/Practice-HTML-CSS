@@ -1,0 +1,12 @@
+table, th, td{
+    border: 1px solid #000;
+    text-align: left;
+}
+
+table{
+    width: 400px;
+}
+
+th,td{
+    padding: 10px;
+}
